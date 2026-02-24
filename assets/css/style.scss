@@ -1170,9 +1170,10 @@ p {
     >img {
       max-width: 584px;
     }
-    .primary-btn1{
-          font-size: 26px;
-          padding: 20px 15px;
+
+    .primary-btn1 {
+      font-size: 26px;
+      padding: 20px 15px;
     }
   }
 
@@ -1213,41 +1214,106 @@ p {
       display: block;
       margin-bottom: 28px;
     }
-    .primary-btn1{
+
+    .primary-btn1 {
       font-size: 32px;
       padding: 20px 30px;
     }
   }
 }
-.benefits-card{
-  .benefits-header{
-        background-color: transparent;
+
+.benefits-card {
+  .benefits-header {
+    background-color: transparent;
     background-image: radial-gradient(at top center, #009E1C 0%, #007E50 81%);
-        padding: 15px 50px 10px;
-        border-radius: 10px;
-        border: 3px solid #F1FF00;
-    h2{
+    padding: 15px 50px 10px;
+    border-radius: 10px;
+    border: 3px solid #F1FF00;
+
+    h2 {
       font-family: var(--font-Hind-Siliguri);
-    font-size: 60px;
-    font-weight: 800;
-    line-height: 80px;
-    color: #FFFFFF;
-    text-align: center;
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 80px;
+      color: #FFFFFF;
+      text-align: center;
     }
   }
-  .benefits-list{
+
+  .benefit-list-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    .benefit-item{
+    gap: 25px;
+
+    .benefits-list {
       display: flex;
-      align-items: center;
-      gap: 10px;
-      .benefit-text{
-            font-family: var(--font-Hind-Siliguri);
-    font-size: 28px;
-    font-weight: 600;
+      gap: 25px;
+
+      .benefit-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .check-icon {
+          i {
+            font-size: 25px;
+          }
+        }
+
+        .benefit-text {
+          font-family: var(--font-Hind-Siliguri);
+          font-size: 28px;
+          font-weight: 600;
+        }
       }
     }
+  }
+
+  .primary-btn1 {
+    font-size: 35px;
+    padding: 25px 30px;
+    border-radius: 10px;
+  }
+}
+
+.ingredients-section {
+  .exmple-wrapper {
+    background-color: var(--primary-color1);
+    padding: 45px 80px;
+    border-radius: 12px;
+
+    h2 {
+      text-align: center;
+      font-family: var(--font-Hind-Siliguri);
+      font-size: 60px;
+      color: var(--white-color);
+
+    }
+
+    .ingredient-card {
+      img {
+        min-width: 558px;
+        min-height: 193px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.why-section {
+  background-color: #CBFFC6;
+  padding: 90px 0;
+
+  h2 {
+    font-family: var(--font-Hind-Siliguri);
+    color: var(--white-color);
+    font-size: 60px;
+    line-height: 1.2;
+    background: #008348;
+    padding: 20px 50px;
+    text-align: center;
+    border: 2px solid #F3FF2D;
+    margin-bottom: 30px;
+    border-radius: 8px;
   }
 }

@@ -1129,18 +1129,65 @@ p {
   color: #FFFFFF;
   text-align: center;
 }
-.benefits-card .benefits-list {
+.benefits-card .benefit-list-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
-.benefits-card .benefits-list .benefit-item {
+.benefits-card .benefit-list-wrapper .benefits-list {
+  display: flex;
+  gap: 25px;
+}
+.benefits-card .benefit-list-wrapper .benefits-list .benefit-item {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.benefits-card .benefits-list .benefit-item .benefit-text {
+.benefits-card .benefit-list-wrapper .benefits-list .benefit-item .check-icon i {
+  font-size: 25px;
+}
+.benefits-card .benefit-list-wrapper .benefits-list .benefit-item .benefit-text {
   font-family: var(--font-Hind-Siliguri);
   font-size: 28px;
   font-weight: 600;
+}
+.benefits-card .primary-btn1 {
+  font-size: 35px;
+  padding: 25px 30px;
+  border-radius: 10px;
+}
+
+.ingredients-section .exmple-wrapper {
+  background-color: var(--primary-color1);
+  padding: 45px 80px;
+  border-radius: 12px;
+}
+.ingredients-section .exmple-wrapper h2 {
+  text-align: center;
+  font-family: var(--font-Hind-Siliguri);
+  font-size: 60px;
+  color: var(--white-color);
+}
+.ingredients-section .exmple-wrapper .ingredient-card img {
+  min-width: 558px;
+  min-height: 193px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.why-section {
+  background-color: #CBFFC6;
+  padding: 90px 0;
+}
+.why-section h2 {
+  font-family: var(--font-Hind-Siliguri);
+  color: var(--white-color);
+  font-size: 60px;
+  line-height: 1.2;
+  background: #008348;
+  padding: 20px 50px;
+  text-align: center;
+  border: 2px solid #F3FF2D;
+  margin-bottom: 30px;
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */
