@@ -1472,7 +1472,7 @@ p {
   }
 }
 .usage-section .usage-content .usage-left .product-card img {
-  min-height: 585px;
+  max-height: 634px;
   -o-object-fit: cover;
      object-fit: cover;
 }
