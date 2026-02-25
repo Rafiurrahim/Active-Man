@@ -85,7 +85,7 @@
 	});
 
 	// Home1 category Slider
-	var swiper = new Swiper(".category-slider", {
+	var swiper = new Swiper(".testimonial-slider", {
 		slidesPerView: 5,
 		speed: 1500,
 		spaceBetween: 24,
@@ -122,23 +122,23 @@
 				spaceBetween: 15,
 			},
 			992: {
-				slidesPerView: 6,
+				slidesPerView: 3,
 				spaceBetween: 15,
 			},
 			1200: {
-				slidesPerView: 6,
+				slidesPerView: 3,
 				spaceBetween: 20,
 			},
 			1400: {
-				slidesPerView: 6,
+				slidesPerView: 3,
 				spaceBetween: 20,
 			},
 			1500: {
-				slidesPerView: 6,
+				slidesPerView: 3,
 				spaceBetween: 20,
 			},
 			1800: {
-				slidesPerView: 6,
+				slidesPerView: 3,
 				spaceBetween: 20,
 			},
 		},

@@ -1107,6 +1107,9 @@ p {
       border-radius: 10px;
       margin-bottom: 30px;
       animation: fadeIn 1.7s;
+      img{
+        border-radius: 10px;
+      }
     }
 
     h1 {
@@ -1244,8 +1247,9 @@ p {
       @include xl-down-device() {
         font-size: 62px;
       }
-      @include md-down-device(){
-                font-size: 55px;
+
+      @include md-down-device() {
+        font-size: 55px;
       }
     }
 
@@ -1304,6 +1308,10 @@ p {
     }
   }
 
+  .right-img {
+    border-radius: 15px;
+  }
+
   .benefit-list-wrapper {
     display: flex;
     flex-direction: column;
@@ -1350,7 +1358,8 @@ p {
 
 .ingredients-section {
   .exmple-wrapper {
-    background-color: var(--primary-color1);
+    background-color: #0f3f03cf;
+    border: 3px solid #F1FF00;
     padding: 45px 80px;
     border-radius: 12px;
 
@@ -1384,6 +1393,37 @@ p {
         }
       }
     }
+
+    .bottom-content {
+      text-align: center;
+
+      p {
+        font-family: var(--font-Hind-Siliguri);
+        color: var(--white-color);
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.4em;
+        margin-bottom: 10px;
+        max-width: 552px;
+        margin: 0 auto;
+      }
+
+      a {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+        font-family: var(--font-Hind-Siliguri);
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--white-color);
+
+        i {
+          color: var(--white-color);
+        }
+      }
+    }
   }
 }
 
@@ -1407,55 +1447,58 @@ p {
       font-size: 45px;
     }
   }
+
+  .feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    li {
+      font-family: var(--font-Hind-Siliguri);
+      color: var(--title-color);
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  }
+
+  .primary-btn1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 auto;
+  }
 }
 
 .usage-section {
-  background: linear-gradient(to bottom, #0d5f16, #0a3d10);
+  background: linear-gradient(to bottom, #0d5f16cf, #275b2d);
   padding: 60px 20px;
   color: #fff;
   text-align: center;
 
-  .container {
-    max-width: 1200px;
-    margin: auto;
-  }
-
   .usage-header {
     h2 {
-      font-size: 36px;
-      font-weight: 700;
-      margin-bottom: 15px;
+      font-family: var(--font-Hind-Siliguri);
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 80px;
+      color: #FFFFFF;
     }
 
     p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: auto;
-      line-height: 1.6;
+      font-family: var(--font-Hind-Siliguri);
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 46px;
+      color: #FFFFFF;
     }
   }
 
   .usage-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-    gap: 40px;
-    flex-wrap: wrap;
-
     .usage-left {
-      flex: 1;
-
       .product-card {
-        background: #111;
-        border-radius: 10px;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-
         img {
-          width: 120px;
+          min-height: 585px;
+          object-fit: cover;
         }
 
         .product-info {
@@ -1479,43 +1522,17 @@ p {
     }
 
     .usage-right {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-
-      .diagram {
-        background: #fff;
-        padding: 15px;
-        border-radius: 8px;
-
-        img {
-          width: 100%;
-        }
-
-        h5 {
-          margin-bottom: 10px;
-          font-size: 16px;
-          font-weight: 700;
-        }
-
-        &.before {
-          h5 {
-            color: red;
-          }
-        }
-
-        &.after {
-          h5 {
-            color: green;
-          }
-        }
+      img {
+        min-height: 585px;
       }
     }
   }
 
-  .order-btn {
-    margin-top: 50px;
+  .primary-btn1 {
+    font-family: var(--font-Hind-Siliguri);
+    color: var(--white-color);
+    font-size: 40px;
+    font-weight: 600;
 
     a {
       background: #0f7f2b;
@@ -1534,6 +1551,65 @@ p {
   }
 }
 
+.offer-section {
+  background: linear-gradient(135deg, #0f8a3e, #16a34a);
+  width: 80%;
+  margin: 40px auto;
+  padding: 40px 30px;
+  border: 3px solid #d6ff00;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+
+  h2 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: var(--white-color);
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+
+    li {
+      font-size: 20px;
+      margin: 12px 0;
+      font-family: var(--font-Hind-Siliguri);
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 42px;
+    }
+  }
+
+  .highlight {
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+  }
+}
+
+.testimonial-section {
+  h2 {
+    font-family: var(--font-Hind-Siliguri);
+    color: var(--white-color);
+    font-size: 60px;
+    line-height: 1.2;
+    background: #008348;
+    padding: 20px 50px;
+    text-align: center;
+    border: 2px solid #F3FF2D;
+    margin-bottom: 30px;
+    border-radius: 8px;
+
+    @include xl-down-device() {
+      font-size: 45px;
+    }
+  }
+}
 
 .checkout-section {
   background: #f4f4f4;
@@ -1550,19 +1626,24 @@ p {
 
   .checkout-title {
     background: #0d7f2b;
-    color: #fff;
-    font-size: 20px;
+    border: 2px solid #F1FF00;
     font-weight: 600;
     text-align: center;
     padding: 14px;
     border-radius: 6px;
     margin-bottom: 15px;
+    font-family: var(--font-Hind-Siliguri);
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
   }
 
   .checkout-subtitle {
     text-align: center;
-    font-size: 14px;
-    margin-bottom: 30px;
+    font-family: var(--font-Hind-Siliguri);
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
 
     span {
       color: red;
@@ -1670,8 +1751,10 @@ p {
     gap: 40px;
 
     h4 {
+      font-family: var(--font-Hind-Siliguri);
+      font-size: 20px;
+      font-weight: 700;
       margin-bottom: 20px;
-      font-size: 18px;
     }
 
     .billing-details {
