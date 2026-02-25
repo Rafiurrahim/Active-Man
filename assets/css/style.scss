@@ -1091,7 +1091,7 @@ p {
   position: relative;
 
   @include md-down-device() {
-    padding: 150px 0 100px;
+    padding: 60px 0 60px;
   }
 
   @include sm-down-device() {
@@ -1121,11 +1121,11 @@ p {
       margin-bottom: 15px;
 
       @include xxl-down-device() {
-        font-size: 70px;
+        font-size: 65px;
       }
 
       @include xl-down-device() {
-        font-size: 65px;
+        font-size: 60px;
       }
 
       @include lg-down-device() {
@@ -1155,6 +1155,10 @@ p {
       max-width: 916px;
       margin: 0 auto;
       margin-bottom: 10px;
+
+      @include xl-down-device() {
+        font-size: 26px;
+      }
     }
   }
 
@@ -1165,13 +1169,29 @@ p {
     gap: 80px;
     margin-bottom: 25px;
 
+    @include xxl-down-device() {
+      gap: 45px;
+    }
+
+    @include md-down-device() {
+      flex-wrap: wrap;
+    }
+
     >img {
       max-width: 584px;
+
+      @include xl-down-device() {
+        max-width: 390px;
+      }
     }
 
     .primary-btn1 {
       font-size: 26px;
       padding: 20px 15px;
+
+      @include xl-down-device() {
+        font-size: 23px;
+      }
     }
   }
 
@@ -1183,6 +1203,15 @@ p {
       font-weight: 700;
       line-height: 51px;
       margin-bottom: 23px;
+
+      @include xl-down-device() {
+        font-size: 30px;
+      }
+
+      @include md-down-device() {
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
     }
 
     h2 {
@@ -1192,6 +1221,16 @@ p {
       font-weight: 800;
       line-height: 80px;
       margin-bottom: 10px;
+
+      @include xl-down-device() {
+        font-size: 50px;
+        margin-bottom: 5px;
+      }
+
+      @include md-down-device() {
+        font-size: 35px;
+        list-style: 1.1;
+      }
     }
 
     h3 {
@@ -1201,6 +1240,13 @@ p {
       font-weight: 800;
       line-height: 1.2;
       margin-bottom: 10px;
+
+      @include xl-down-device() {
+        font-size: 62px;
+      }
+      @include md-down-device(){
+                font-size: 55px;
+      }
     }
 
     >span {
@@ -1211,11 +1257,19 @@ p {
       line-height: 1.2;
       display: block;
       margin-bottom: 28px;
+
+      @include xl-down-device() {
+        font-size: 37px;
+      }
     }
 
     .primary-btn1 {
       font-size: 32px;
       padding: 20px 30px;
+
+      @include xl-down-device() {
+        font-size: 28px;
+      }
     }
   }
 }
@@ -1228,6 +1282,10 @@ p {
     border-radius: 10px;
     border: 3px solid #F1FF00;
 
+    @include xl-down-device() {
+      padding: 15px 30px 10px;
+    }
+
     h2 {
       font-family: var(--font-Hind-Siliguri);
       font-size: 60px;
@@ -1235,6 +1293,14 @@ p {
       line-height: 80px;
       color: #FFFFFF;
       text-align: center;
+
+      @include xxl-down-device() {
+        font-size: 55px;
+      }
+
+      @include xl-down-device() {
+        font-size: 46px;
+      }
     }
   }
 
@@ -1262,6 +1328,10 @@ p {
           font-family: var(--font-Hind-Siliguri);
           font-size: 28px;
           font-weight: 600;
+
+          @include xl-down-device() {
+            font-size: 24px;
+          }
         }
       }
     }
@@ -1271,6 +1341,10 @@ p {
     font-size: 35px;
     padding: 25px 30px;
     border-radius: 10px;
+
+    @include xl-down-device() {
+      font-size: 28px;
+    }
   }
 }
 
@@ -1280,12 +1354,19 @@ p {
     padding: 45px 80px;
     border-radius: 12px;
 
+    @include xl-down-device() {
+      padding: 40px 45px;
+    }
+
     h2 {
       text-align: center;
       font-family: var(--font-Hind-Siliguri);
       font-size: 60px;
       color: var(--white-color);
 
+      @include xl-down-device() {
+        font-size: 50px;
+      }
     }
 
     .ingredient-card {
@@ -1293,6 +1374,14 @@ p {
         min-width: 558px;
         min-height: 193px;
         object-fit: cover;
+
+        @include xxl-down-device() {
+          min-width: 465px;
+        }
+
+        @include xl-down-device() {
+          min-width: 409px;
+        }
       }
     }
   }
@@ -1313,6 +1402,10 @@ p {
     border: 2px solid #F3FF2D;
     margin-bottom: 30px;
     border-radius: 8px;
+
+    @include xl-down-device() {
+      font-size: 45px;
+    }
   }
 }
 

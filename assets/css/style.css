@@ -993,7 +993,7 @@ p {
 }
 @media (max-width: 767px) {
   .home1-banner-section {
-    padding: 150px 0 100px;
+    padding: 60px 0 60px;
   }
 }
 @media (max-width: 576px) {
@@ -1023,12 +1023,12 @@ p {
 }
 @media (max-width: 1399px) {
   .home1-banner-section .banner-content h1 {
-    font-size: 70px;
+    font-size: 65px;
   }
 }
 @media (max-width: 1199px) {
   .home1-banner-section .banner-content h1 {
-    font-size: 65px;
+    font-size: 60px;
   }
 }
 @media (max-width: 991px) {
@@ -1060,6 +1060,11 @@ p {
   margin: 0 auto;
   margin-bottom: 10px;
 }
+@media (max-width: 1199px) {
+  .home1-banner-section .banner-content p {
+    font-size: 26px;
+  }
+}
 .home1-banner-section .banner-center-area {
   display: flex;
   align-items: center;
@@ -1067,12 +1072,32 @@ p {
   gap: 80px;
   margin-bottom: 25px;
 }
+@media (max-width: 1399px) {
+  .home1-banner-section .banner-center-area {
+    gap: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .home1-banner-section .banner-center-area {
+    flex-wrap: wrap;
+  }
+}
 .home1-banner-section .banner-center-area > img {
   max-width: 584px;
+}
+@media (max-width: 1199px) {
+  .home1-banner-section .banner-center-area > img {
+    max-width: 390px;
+  }
 }
 .home1-banner-section .banner-center-area .primary-btn1 {
   font-size: 26px;
   padding: 20px 15px;
+}
+@media (max-width: 1199px) {
+  .home1-banner-section .banner-center-area .primary-btn1 {
+    font-size: 23px;
+  }
 }
 .home1-banner-section .banner-btm-area p {
   font-family: var(--font-Hind-Siliguri);
@@ -1082,6 +1107,17 @@ p {
   line-height: 51px;
   margin-bottom: 23px;
 }
+@media (max-width: 1199px) {
+  .home1-banner-section .banner-btm-area p {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .home1-banner-section .banner-btm-area p {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
 .home1-banner-section .banner-btm-area h2 {
   font-family: var(--font-Hind-Siliguri);
   color: var(--primary-color1);
@@ -1090,6 +1126,18 @@ p {
   line-height: 80px;
   margin-bottom: 10px;
 }
+@media (max-width: 1199px) {
+  .home1-banner-section .banner-btm-area h2 {
+    font-size: 50px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .home1-banner-section .banner-btm-area h2 {
+    font-size: 35px;
+    list-style: 1.1;
+  }
+}
 .home1-banner-section .banner-btm-area h3 {
   font-family: var(--font-Hind-Siliguri);
   color: #ff0000;
@@ -1097,6 +1145,16 @@ p {
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 10px;
+}
+@media (max-width: 1199px) {
+  .home1-banner-section .banner-btm-area h3 {
+    font-size: 62px;
+  }
+}
+@media (max-width: 767px) {
+  .home1-banner-section .banner-btm-area h3 {
+    font-size: 55px;
+  }
 }
 .home1-banner-section .banner-btm-area > span {
   font-family: var(--font-Hind-Siliguri);
@@ -1107,9 +1165,19 @@ p {
   display: block;
   margin-bottom: 28px;
 }
+@media (max-width: 1199px) {
+  .home1-banner-section .banner-btm-area > span {
+    font-size: 37px;
+  }
+}
 .home1-banner-section .banner-btm-area .primary-btn1 {
   font-size: 32px;
   padding: 20px 30px;
+}
+@media (max-width: 1199px) {
+  .home1-banner-section .banner-btm-area .primary-btn1 {
+    font-size: 28px;
+  }
 }
 
 .benefits-card .benefits-header {
@@ -1119,6 +1187,11 @@ p {
   border-radius: 10px;
   border: 3px solid #F1FF00;
 }
+@media (max-width: 1199px) {
+  .benefits-card .benefits-header {
+    padding: 15px 30px 10px;
+  }
+}
 .benefits-card .benefits-header h2 {
   font-family: var(--font-Hind-Siliguri);
   font-size: 60px;
@@ -1126,6 +1199,16 @@ p {
   line-height: 80px;
   color: #FFFFFF;
   text-align: center;
+}
+@media (max-width: 1399px) {
+  .benefits-card .benefits-header h2 {
+    font-size: 55px;
+  }
+}
+@media (max-width: 1199px) {
+  .benefits-card .benefits-header h2 {
+    font-size: 46px;
+  }
 }
 .benefits-card .benefit-list-wrapper {
   display: flex;
@@ -1149,10 +1232,20 @@ p {
   font-size: 28px;
   font-weight: 600;
 }
+@media (max-width: 1199px) {
+  .benefits-card .benefit-list-wrapper .benefits-list .benefit-item .benefit-text {
+    font-size: 24px;
+  }
+}
 .benefits-card .primary-btn1 {
   font-size: 35px;
   padding: 25px 30px;
   border-radius: 10px;
+}
+@media (max-width: 1199px) {
+  .benefits-card .primary-btn1 {
+    font-size: 28px;
+  }
 }
 
 .ingredients-section .exmple-wrapper {
@@ -1160,17 +1253,37 @@ p {
   padding: 45px 80px;
   border-radius: 12px;
 }
+@media (max-width: 1199px) {
+  .ingredients-section .exmple-wrapper {
+    padding: 40px 45px;
+  }
+}
 .ingredients-section .exmple-wrapper h2 {
   text-align: center;
   font-family: var(--font-Hind-Siliguri);
   font-size: 60px;
   color: var(--white-color);
 }
+@media (max-width: 1199px) {
+  .ingredients-section .exmple-wrapper h2 {
+    font-size: 50px;
+  }
+}
 .ingredients-section .exmple-wrapper .ingredient-card img {
   min-width: 558px;
   min-height: 193px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 1399px) {
+  .ingredients-section .exmple-wrapper .ingredient-card img {
+    min-width: 465px;
+  }
+}
+@media (max-width: 1199px) {
+  .ingredients-section .exmple-wrapper .ingredient-card img {
+    min-width: 409px;
+  }
 }
 
 .why-section {
@@ -1188,6 +1301,11 @@ p {
   border: 2px solid #F3FF2D;
   margin-bottom: 30px;
   border-radius: 8px;
+}
+@media (max-width: 1199px) {
+  .why-section h2 {
+    font-size: 45px;
+  }
 }
 
 .usage-section {
