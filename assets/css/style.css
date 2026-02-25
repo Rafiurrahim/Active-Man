@@ -1062,6 +1062,7 @@ p {
   max-width: 916px;
   margin: 0 auto;
   margin-bottom: 10px;
+  animation: fadeInDown 1.7s;
 }
 @media (max-width: 1199px) {
   .home1-banner-section .banner-content p {
@@ -1189,6 +1190,7 @@ p {
   padding: 15px 50px 10px;
   border-radius: 10px;
   border: 3px solid #F1FF00;
+  animation: fadeInUp 1.7s;
 }
 @media (max-width: 1199px) {
   .benefits-card .benefits-header {
@@ -1335,6 +1337,7 @@ p {
   border: 2px solid #F3FF2D;
   margin-bottom: 30px;
   border-radius: 8px;
+  animation: fadeInUp 1.7s;
 }
 @media (max-width: 1199px) {
   .why-section h2 {
@@ -1371,6 +1374,8 @@ p {
   font-weight: 800;
   line-height: 80px;
   color: #FFFFFF;
+  animation: fadeInUp 1.7s;
+  text-decoration: underline;
 }
 .usage-section .usage-header p {
   font-family: var(--font-Hind-Siliguri);
@@ -1378,6 +1383,7 @@ p {
   font-weight: 800;
   line-height: 46px;
   color: #FFFFFF;
+  animation: fadeInDown 1.7s;
 }
 .usage-section .usage-content .usage-left .product-card img {
   min-height: 585px;
@@ -1468,6 +1474,7 @@ p {
   border: 2px solid #F3FF2D;
   margin-bottom: 30px;
   border-radius: 8px;
+  animation: fadeInUp 1.7s;
 }
 @media (max-width: 1199px) {
   .testimonial-section h2 {
@@ -1499,6 +1506,7 @@ p {
   font-size: 30px;
   font-weight: 700;
   color: #FFFFFF;
+  animation: fadeInUp 1.7s;
 }
 .checkout-section .checkout-subtitle {
   text-align: center;
