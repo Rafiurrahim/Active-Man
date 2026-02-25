@@ -74,6 +74,41 @@
 		subtotal.innerText = qty * pricePerProduct;
 		total.innerText = qty * pricePerProduct;
 	}
+		//Cart Page Quantity button toggle
+	$(".qty-btn").on("click", function (e) {
+		e.stopPropagation();
+		// Toggle "active" class for the current quantity button and its related elements
+		$(this).next(".quantity-area").toggleClass("active");
+
+		// Remove "active" class from other quantity buttons and related elements
+		$(".quantity-area")
+			.not($(this).next(".quantity-area"))
+			.removeClass("active");
+	});
+	$(".quantity__plus").on("click", function (e) {
+		e.preventDefault();
+		var input = $(this).siblings(".quantity__input");
+		var value = parseInt(input.val(), 10);
+		value++;
+		input.val(value.toString().padStart(2, "0"));
+	});
+	$(".quantity__minus").on("click", function (e) {
+		e.preventDefault();
+		var input = $(this).siblings(".quantity__input");
+		var value = parseInt(input.val(), 10);
+
+		if (value > 1) {
+			value--;
+			input.val(value.toString().padStart(2, "0"));
+		}
+	});
+
+	$(document).on("click", function (e) {
+		if (!$(e.target).closest(".quantity-area").length) {
+			// Remove "active" class from all quantity buttons and related elements
+			$(".quantity-area").removeClass("active");
+		}
+	});
 	// sticky header
 	window.addEventListener("scroll", function () {
 		const header = document.querySelector("header.header-area");

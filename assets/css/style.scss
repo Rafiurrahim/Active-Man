@@ -1512,24 +1512,56 @@ p {
         }
       }
 
-      .quantity-box {
-        display: flex;
-        align-items: center;
-        gap: 5px;
+      .quantity-area {
+        .quantity {
+          display: flex;
+          gap: 5px;
 
-        button {
-          width: 28px;
-          height: 28px;
-          border: 1px solid #ccc;
-          background: #fff;
-          cursor: pointer;
-        }
+          a {
+            height: 24px;
+            width: 34px;
+            border-radius: 4px;
+            background: rgba(var(--black-color-opc), 0.07);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--title-color);
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.35s;
 
-        input {
-          width: 40px;
-          text-align: center;
-          border: 1px solid #ccc;
-          height: 28px;
+            i {
+              color: var(--title-color);
+              transition: 0.35s;
+            }
+
+            &:hover {
+              background: var(--primary-color1);
+              border-color: var(--primary-color1);
+              color: var(--white-color);
+
+              i {
+                color: var(--title-color);
+              }
+            }
+          }
+
+          input {
+            height: 24px;
+            width: 34px;
+            border-radius: 4px;
+            border: 1px solid rgba(var(--black-color-opc), 0.3);
+            background-color: var(--white-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-Hind-Siliguri);
+            font-size: 14px;
+            color: var(--title-color);
+            font-weight: 600;
+            text-align: center;
+          }
         }
       }
 

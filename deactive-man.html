@@ -326,86 +326,90 @@
         </div>
     </section>
     <section class="checkout-section">
-  <div class="checkout-wrapper">
-    
-    <div class="checkout-title">
-      অর্ডারটি কনফার্ম করতে আপনার নাম নাম্বার ঠিকানা দিন
-    </div>
+        <div class="checkout-wrapper">
 
-    <p class="checkout-subtitle">
-      অর্ডারটি নিশ্চিত করতে আপনার <span>তথ্য প্রয়োজন</span>
-    </p>
+            <div class="checkout-title">
+                অর্ডারটি কনফার্ম করতে আপনার নাম নাম্বার ঠিকানা দিন
+            </div>
 
-    <div class="cart-table">
-      <div class="cart-header">
-        <div>Product</div>
-        <div>Quantity</div>
-        <div>Price</div>
-      </div>
+            <p class="checkout-subtitle">
+                অর্ডারটি নিশ্চিত করতে আপনার <span>তথ্য প্রয়োজন</span>
+            </p>
 
-      <div class="cart-row">
-        <div class="product-info">
-          <img src="product.png" alt="">
-          <span>Booster × 1</span>
+            <div class="cart-table">
+                <div class="cart-header">
+                    <div>Product</div>
+                    <div>Quantity</div>
+                    <div>Price</div>
+                </div>
+
+                <div class="cart-row">
+                    <div class="product-info">
+                        <img src="product.png" alt="">
+                        <span>Booster × <span id="topQty">1</span></span>
+                    </div>
+
+                    <div class="quantity-area">
+                        <div class="quantity">
+                            <a class="quantity__minus"><span><i class="bi bi-dash"></i></span></a>
+                            <input name="quantity" type="text" class="quantity__input" value="01">
+                            <a class="quantity__plus"><span><i class="bi bi-plus"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="price">৳ <span id="topPrice">500</span></div>
+                </div>
+            </div>
+
+            <div class="checkout-grid">
+
+                <!-- Billing -->
+                <div class="billing-details">
+                    <h4>Billing details</h4>
+
+                    <div class="form-group">
+                        <label>আপনার নাম <span>*</span></label>
+                        <input type="text" placeholder="Rafiur">
+                    </div>
+
+                    <div class="form-group">
+                        <label>আপনার মোবাইল নাম্বার <span>*</span></label>
+                        <input type="text" placeholder="+88017XXXXXXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label>আপনার সম্পূর্ণ ঠিকানা <span>*</span></label>
+                        <textarea rows="3"></textarea>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h4>Your order</h4>
+
+                    <div class="summary-row">
+                        <span>Booster × <span id="bottomQty">1</span></span>
+                        <span>৳ <span id="bottomPrice">500</span></span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>৳ <span id="subtotal">500</span></span>
+                    </div>
+
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span>৳ <span id="total">500</span></span>
+                    </div>
+
+                    <button class="confirm-btn">
+                        🔒 অর্ডার করুন
+                    </button>
+                </div>
+
+            </div>
         </div>
-        <div class="quantity-box">
-          <button>-</button>
-          <input type="text" value="1">
-          <button>+</button>
-        </div>
-        <div class="price">৳ 0</div>
-      </div>
-    </div>
-
-    <div class="checkout-grid">
-
-      <!-- Billing -->
-      <div class="billing-details">
-        <h4>Billing details</h4>
-
-        <div class="form-group">
-          <label>আপনার নাম <span>*</span></label>
-          <input type="text" placeholder="Rafiur">
-        </div>
-
-        <div class="form-group">
-          <label>আপনার মোবাইল নাম্বার <span>*</span></label>
-          <input type="text" placeholder="+88017XXXXXXXX">
-        </div>
-
-        <div class="form-group">
-          <label>আপনার সম্পূর্ণ ঠিকানা <span>*</span></label>
-          <textarea rows="3"></textarea>
-        </div>
-      </div>
-
-      <!-- Order Summary -->
-      <div class="order-summary">
-        <h4>Your order</h4>
-
-        <div class="summary-row">
-          <span>Booster × 1</span>
-          <span>৳ 0</span>
-        </div>
-
-        <div class="summary-row">
-          <span>Subtotal</span>
-          <span>৳ 0</span>
-        </div>
-
-        <div class="summary-row total">
-          <span>Total</span>
-          <span>৳ 0</span>
-        </div>
-
-        <button class="confirm-btn">
-          🔒 অর্ডার করুন
-        </button>
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
     <!-- FOOTER -->
     <footer class="text-center py-3 bg-dark text-white">
         Copyright © 2026

@@ -1349,23 +1349,50 @@ p {
 .checkout-section .cart-table .cart-row .product-info img {
   width: 40px;
 }
-.checkout-section .cart-table .cart-row .quantity-box {
+.checkout-section .cart-table .cart-row .quantity-area .quantity {
   display: flex;
-  align-items: center;
   gap: 5px;
 }
-.checkout-section .cart-table .cart-row .quantity-box button {
-  width: 28px;
-  height: 28px;
-  border: 1px solid #ccc;
-  background: #fff;
+.checkout-section .cart-table .cart-row .quantity-area .quantity a {
+  height: 24px;
+  width: 34px;
+  border-radius: 4px;
+  background: rgba(var(--black-color-opc), 0.07);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--title-color);
+  font-weight: 600;
   cursor: pointer;
+  transition: 0.35s;
 }
-.checkout-section .cart-table .cart-row .quantity-box input {
-  width: 40px;
+.checkout-section .cart-table .cart-row .quantity-area .quantity a i {
+  color: var(--title-color);
+  transition: 0.35s;
+}
+.checkout-section .cart-table .cart-row .quantity-area .quantity a:hover {
+  background: var(--primary-color1);
+  border-color: var(--primary-color1);
+  color: var(--white-color);
+}
+.checkout-section .cart-table .cart-row .quantity-area .quantity a:hover i {
+  color: var(--title-color);
+}
+.checkout-section .cart-table .cart-row .quantity-area .quantity input {
+  height: 24px;
+  width: 34px;
+  border-radius: 4px;
+  border: 1px solid rgba(var(--black-color-opc), 0.3);
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-Hind-Siliguri);
+  font-size: 14px;
+  color: var(--title-color);
+  font-weight: 600;
   text-align: center;
-  border: 1px solid #ccc;
-  height: 28px;
 }
 .checkout-section .cart-table .cart-row .price {
   font-weight: 600;
