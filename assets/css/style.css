@@ -1190,4 +1190,264 @@ p {
   border: 2px solid #F3FF2D;
   margin-bottom: 30px;
   border-radius: 8px;
+}
+
+.usage-section {
+  background: linear-gradient(to bottom, #0d5f16, #0a3d10);
+  padding: 60px 20px;
+  color: #fff;
+  text-align: center;
+}
+.usage-section .container {
+  max-width: 1200px;
+  margin: auto;
+}
+.usage-section .usage-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.usage-section .usage-header p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+.usage-section .usage-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.usage-section .usage-content .usage-left {
+  flex: 1;
+}
+.usage-section .usage-content .usage-left .product-card {
+  background: #111;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.usage-section .usage-content .usage-left .product-card img {
+  width: 120px;
+}
+.usage-section .usage-content .usage-left .product-card .product-info h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.usage-section .usage-content .usage-left .product-card .product-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.usage-section .usage-content .usage-left .product-card .product-info ul li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.usage-section .usage-content .usage-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.usage-section .usage-content .usage-right .diagram {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+}
+.usage-section .usage-content .usage-right .diagram img {
+  width: 100%;
+}
+.usage-section .usage-content .usage-right .diagram h5 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.usage-section .usage-content .usage-right .diagram.before h5 {
+  color: red;
+}
+.usage-section .usage-content .usage-right .diagram.after h5 {
+  color: green;
+}
+.usage-section .order-btn {
+  margin-top: 50px;
+}
+.usage-section .order-btn a {
+  background: #0f7f2b;
+  padding: 15px 35px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+.usage-section .order-btn a:hover {
+  background: #095c1d;
+}
+
+.checkout-section {
+  background: #f4f4f4;
+  padding: 60px 20px;
+}
+.checkout-section .checkout-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 40px;
+  border-radius: 6px;
+}
+.checkout-section .checkout-title {
+  background: #0d7f2b;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding: 14px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.checkout-section .checkout-subtitle {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.checkout-section .checkout-subtitle span {
+  color: red;
+  font-weight: 600;
+  border: 1px solid red;
+  padding: 2px 6px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.checkout-section .cart-table {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 40px;
+}
+.checkout-section .cart-table .cart-header,
+.checkout-section .cart-table .cart-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
+  padding: 10px 0;
+}
+.checkout-section .cart-table .cart-header {
+  font-weight: 600;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+}
+.checkout-section .cart-table .cart-row .product-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.checkout-section .cart-table .cart-row .product-info img {
+  width: 40px;
+}
+.checkout-section .cart-table .cart-row .quantity-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.checkout-section .cart-table .cart-row .quantity-box button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+.checkout-section .cart-table .cart-row .quantity-box input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  height: 28px;
+}
+.checkout-section .cart-table .cart-row .price {
+  font-weight: 600;
+}
+.checkout-section .checkout-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+}
+.checkout-section .checkout-grid h4 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.checkout-section .checkout-grid .billing-details .form-group {
+  margin-bottom: 18px;
+}
+.checkout-section .checkout-grid .billing-details .form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.checkout-section .checkout-grid .billing-details .form-group label span {
+  color: red;
+}
+.checkout-section .checkout-grid .billing-details .form-group input,
+.checkout-section .checkout-grid .billing-details .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.checkout-section .checkout-grid .billing-details .form-group input:focus,
+.checkout-section .checkout-grid .billing-details .form-group textarea:focus {
+  border-color: #0d7f2b;
+  outline: none;
+}
+.checkout-section .checkout-grid .order-summary {
+  background: #fafafa;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.checkout-section .checkout-grid .order-summary .summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.checkout-section .checkout-grid .order-summary .summary-row.total {
+  font-weight: 700;
+  font-size: 16px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+.checkout-section .checkout-grid .order-summary .confirm-btn {
+  width: 100%;
+  background: #0d7f2b;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+.checkout-section .checkout-grid .order-summary .confirm-btn:hover {
+  background: #095c1d;
+}
+.checkout-section {
+  /* Responsive */
+}
+@media (max-width: 992px) {
+  .checkout-section .checkout-grid {
+    grid-template-columns: 1fr;
+  }
+  .checkout-section .cart-table .cart-header,
+  .checkout-section .cart-table .cart-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

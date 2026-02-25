@@ -280,105 +280,132 @@
             </div>
         </div>
     </div>
-
-    <div class="checkout-wrapper py-5">
+    <section class="usage-section">
         <div class="container">
-
-            <div class="checkout-box">
-
-                <!-- TOP TITLE -->
-                <div class="checkout-title text-center">
-                    অর্ডারটি কনফার্ম করতে আপনার নাম নাম্বার ঠিকানা দিন
-                </div>
-
-                <p class="text-center mt-3 notice-text">
-                    অফারটি সীমিত সময়ের জন্য <span>শর্ত প্রযোজ্য</span>
+            <div class="usage-header">
+                <h2>সেবন বিধি</h2>
+                <p>
+                    প্রতি রাতে খাবার পর এক চা-চামচ গুঁড়ো আধ গ্লাস গরম পানির সাথে
+                    মিশিয়ে খাবেন।
                 </p>
+            </div>
 
-                <!-- PRODUCT ROW -->
-                <div class="product-row mt-4">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 d-flex align-items-center gap-3">
-                            <input type="radio" checked>
-                            <img src="product.jpg" width="60">
-                            <strong>Booster × 1</strong>
-                        </div>
-
-                        <div class="col-md-3 text-center quantity-box">
-                            <button class="qty-minus">−</button>
-                            <input type="text" value="1" id="qty">
-                            <button class="qty-plus">+</button>
-                        </div>
-
-                        <div class="col-md-3 text-end price">
-                            ৳ <span id="price">0</span>
+            <div class="usage-content">
+                <!-- Left Side -->
+                <div class="usage-left">
+                    <div class="product-card">
+                        <img src="product.png" alt="Product">
+                        <div class="product-info">
+                            <h4>এমডি ক্যাপসুল - এক্সক্লুসিভ</h4>
+                            <ul>
+                                <li>✔ শক্তি বৃদ্ধি করে</li>
+                                <li>✔ দীর্ঘস্থায়ী কর্মক্ষমতা</li>
+                                <li>✔ সম্পূর্ণ হারবাল উপাদান</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- FORM + ORDER -->
-                <div class="row mt-5">
-                    <div class="col-lg-6">
-
-                        <h5 class="mb-3">Billing details</h5>
-
-                        <form>
-                            <div class="mb-3">
-                                <label>আপনার নাম <span>*</span></label>
-                                <input type="text" class="form-control" placeholder="Rafiur">
-                            </div>
-
-                            <div class="mb-3">
-                                <label>আপনার ফোন নাম্বার <span>*</span></label>
-                                <input type="text" class="form-control" placeholder="+8801XXXXXXXXX">
-                            </div>
-
-                            <div class="mb-3">
-                                <label>আপনার সম্পূর্ণ ঠিকানা <span>*</span></label>
-                                <input type="text" class="form-control" placeholder="ঠিকানা লিখুন">
-                            </div>
-
-                        </form>
+                <!-- Right Side -->
+                <div class="usage-right">
+                    <div class="diagram">
+                        <h5 class="before">খাওয়ার আগে</h5>
+                        <img src="before.png" alt="Before">
                     </div>
 
-                    <div class="col-lg-6">
-
-                        <h5 class="mb-3">Your order</h5>
-
-                        <div class="order-summary">
-                            <div class="d-flex justify-content-between">
-                                <span>Booster</span>
-                                <span>× <span id="summaryQty">1</span> ৳ 0</span>
-                            </div>
-
-                            <hr>
-
-                            <div class="d-flex justify-content-between">
-                                <strong>Subtotal</strong>
-                                <strong>৳ <span id="subtotal">0</span></strong>
-                            </div>
-
-                            <div class="d-flex justify-content-between">
-                                <strong>Total</strong>
-                                <strong>৳ <span id="total">0</span></strong>
-                            </div>
-
-                            <p class="small mt-3">
-                                Your personal data will be used to process your order...
-                            </p>
-
-                            <button class="order-btn mt-3">
-                                🔒 অর্ডার করুন
-                            </button>
-
-                        </div>
-
+                    <div class="diagram">
+                        <h5 class="after">খাওয়ার পরে</h5>
+                        <img src="after.png" alt="After">
                     </div>
                 </div>
+            </div>
 
+            <div class="order-btn">
+                <a href="#">🛒 অর্ডার করতে চাই</a>
             </div>
         </div>
+    </section>
+    <section class="checkout-section">
+  <div class="checkout-wrapper">
+    
+    <div class="checkout-title">
+      অর্ডারটি কনফার্ম করতে আপনার নাম নাম্বার ঠিকানা দিন
     </div>
+
+    <p class="checkout-subtitle">
+      অর্ডারটি নিশ্চিত করতে আপনার <span>তথ্য প্রয়োজন</span>
+    </p>
+
+    <div class="cart-table">
+      <div class="cart-header">
+        <div>Product</div>
+        <div>Quantity</div>
+        <div>Price</div>
+      </div>
+
+      <div class="cart-row">
+        <div class="product-info">
+          <img src="product.png" alt="">
+          <span>Booster × 1</span>
+        </div>
+        <div class="quantity-box">
+          <button>-</button>
+          <input type="text" value="1">
+          <button>+</button>
+        </div>
+        <div class="price">৳ 0</div>
+      </div>
+    </div>
+
+    <div class="checkout-grid">
+
+      <!-- Billing -->
+      <div class="billing-details">
+        <h4>Billing details</h4>
+
+        <div class="form-group">
+          <label>আপনার নাম <span>*</span></label>
+          <input type="text" placeholder="Rafiur">
+        </div>
+
+        <div class="form-group">
+          <label>আপনার মোবাইল নাম্বার <span>*</span></label>
+          <input type="text" placeholder="+88017XXXXXXXX">
+        </div>
+
+        <div class="form-group">
+          <label>আপনার সম্পূর্ণ ঠিকানা <span>*</span></label>
+          <textarea rows="3"></textarea>
+        </div>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="order-summary">
+        <h4>Your order</h4>
+
+        <div class="summary-row">
+          <span>Booster × 1</span>
+          <span>৳ 0</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span>৳ 0</span>
+        </div>
+
+        <div class="summary-row total">
+          <span>Total</span>
+          <span>৳ 0</span>
+        </div>
+
+        <button class="confirm-btn">
+          🔒 অর্ডার করুন
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
     <!-- FOOTER -->
     <footer class="text-center py-3 bg-dark text-white">
         Copyright © 2026
