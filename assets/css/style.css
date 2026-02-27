@@ -1765,17 +1765,6 @@ p {
   justify-content: end;
   gap: 3px;
 }
-.checkout-section .checkout-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 40px;
-  align-items: end;
-}
-@media (max-width: 576px) {
-  .checkout-section .checkout-grid {
-    gap: 0;
-  }
-}
 .checkout-section .checkout-grid h4 {
   font-family: var(--font-Hind-Siliguri);
   font-size: 20px;
@@ -1857,17 +1846,4 @@ p {
 }
 .checkout-section .checkout-grid .order-summary .primary-btn1:hover {
   background: #095c1d;
-}
-.checkout-section {
-  /* Responsive */
-}
-@media (max-width: 992px) {
-  .checkout-section .checkout-grid {
-    grid-template-columns: 1fr;
-  }
-  .checkout-section .cart-table .cart-header,
-  .checkout-section .cart-table .cart-row {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
 }/*# sourceMappingURL=style.css.map */

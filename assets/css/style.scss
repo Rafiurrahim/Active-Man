@@ -1897,15 +1897,6 @@ p {
   }
 
   .checkout-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 40px;
-    align-items: end;
-
-    @include sm-down-device() {
-      gap: 0;
-    }
-
     h4 {
       font-family: var(--font-Hind-Siliguri);
       font-size: 20px;
@@ -2001,22 +1992,6 @@ p {
         &:hover {
           background: #095c1d;
         }
-      }
-    }
-  }
-
-  /* Responsive */
-  @media (max-width: 992px) {
-    .checkout-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .cart-table {
-
-      .cart-header,
-      .cart-row {
-        grid-template-columns: 1fr;
-        gap: 10px;
       }
     }
   }
