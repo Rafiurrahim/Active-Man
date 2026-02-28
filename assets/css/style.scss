@@ -493,6 +493,9 @@ p {
 .pt-30 {
   padding-top: 30px;
 }
+.pt-60 {
+  padding-top: 60px;
+}
 
 .pb-80 {
   padding-bottom: 80px;
@@ -1446,6 +1449,7 @@ p {
         margin-bottom: 10px;
         max-width: 552px;
         margin: 0 auto;
+        margin-bottom: 30px;
 
         @include sm-down-device() {
           font-size: 30px;
@@ -1728,7 +1732,8 @@ p {
 
 .checkout-section {
   background: #f4f4f4;
-  padding: 60px 20px;
+
+
 
   .checkout-wrapper {
     max-width: 1100px;
@@ -1843,7 +1848,7 @@ p {
             height: 24px;
             width: 34px;
             border-radius: 4px;
-            background: rgba(var(--black-color-opc), 0.07);
+            background: rgba(var(--title-color-opc), 0.07);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1942,8 +1947,9 @@ p {
       .summary-row {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 12px;
+        margin-bottom: 25px;
         font-size: 14px;
+        align-items: center;
 
         span {
           font-size: 16px;
@@ -1976,23 +1982,30 @@ p {
           padding-top: 10px;
         }
       }
+    }
 
-      .primary-btn1 {
-        width: 100%;
-        background: #0d7f2b;
-        color: #fff;
-        border: none;
-        padding: 14px;
-        border-radius: 5px;
-        font-weight: 600;
-        cursor: pointer;
-        margin-top: 15px;
-        transition: 0.3s;
+    .primary-btn1 {
+      width: 100%;
+      background: #0d7f2b;
+      color: #fff;
+      border: none;
+      padding: 14px;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: 0.3s;
 
-        &:hover {
-          background: #095c1d;
-        }
+      &:hover {
+        background: #095c1d;
       }
     }
   }
+}
+
+.bg-dark {
+  font-family: var(--font-Hind-Siliguri);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
 }

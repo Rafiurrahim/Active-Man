@@ -404,6 +404,10 @@ p {
   padding-top: 30px;
 }
 
+.pt-60 {
+  padding-top: 60px;
+}
+
 .pb-80 {
   padding-bottom: 80px;
 }
@@ -1351,6 +1355,7 @@ p {
   margin-bottom: 10px;
   max-width: 552px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 @media (max-width: 576px) {
   .ingredients-section .exmple-wrapper .bottom-content p {
@@ -1615,7 +1620,6 @@ p {
 
 .checkout-section {
   background: #f4f4f4;
-  padding: 60px 20px;
 }
 .checkout-section .checkout-wrapper {
   max-width: 1100px;
@@ -1722,7 +1726,7 @@ p {
   height: 24px;
   width: 34px;
   border-radius: 4px;
-  background: rgba(var(--black-color-opc), 0.07);
+  background: rgba(var(--title-color-opc), 0.07);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1802,8 +1806,9 @@ p {
 .checkout-section .checkout-grid .order-summary .summary-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 25px;
   font-size: 14px;
+  align-items: center;
 }
 .checkout-section .checkout-grid .order-summary .summary-row span {
   font-size: 16px;
@@ -1832,7 +1837,7 @@ p {
   border-top: 1px solid #ddd;
   padding-top: 10px;
 }
-.checkout-section .checkout-grid .order-summary .primary-btn1 {
+.checkout-section .checkout-grid .primary-btn1 {
   width: 100%;
   background: #0d7f2b;
   color: #fff;
@@ -1844,6 +1849,13 @@ p {
   margin-top: 15px;
   transition: 0.3s;
 }
-.checkout-section .checkout-grid .order-summary .primary-btn1:hover {
+.checkout-section .checkout-grid .primary-btn1:hover {
   background: #095c1d;
+}
+
+.bg-dark {
+  font-family: var(--font-Hind-Siliguri);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
 }/*# sourceMappingURL=style.css.map */
